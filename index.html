@@ -151,7 +151,7 @@ body::before{
 .filete span{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--oro),transparent)}
 .tratamiento{font-size:1.15rem;font-style:italic}
 .nombre{
-  font-family:"Pinyon Script",cursive;font-weight:400;font-size:clamp(3.05rem,10.8vw,4.6rem);line-height:1.15;margin:.3rem 0 .15rem;
+  font-family:"Pinyon Script",cursive;font-weight:400;font-size:clamp(2.1rem,7vw,2.9rem);line-height:1.15;margin:.3rem 0 .15rem;
   background:linear-gradient(100deg,var(--verde) 35%,#B08D4F 48%,#F1DFAF 50%,#B08D4F 52%,var(--verde) 65%);
   background-size:300% 100%;background-position:100% 0;
   -webkit-background-clip:text;background-clip:text;color:transparent;
@@ -230,7 +230,14 @@ body::before{
 .esquela .vestimenta p{text-align:left;line-height:1.3}
 .esquela .vestimenta b{display:inline}
 .esquela .ciudad{text-align:right}
-@media (max-width:460px){.esquela .ciudad{text-align:center}}
+.esquela .pie{flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:flex-end;gap:1rem}
+.esquela .vestimenta{width:auto;justify-content:flex-start;text-align:left}
+.esquela .ciudad{width:auto;text-align:right;align-self:flex-end;font-size:clamp(1.15rem,2.8vw,1.3rem)}
+.esquela .homenaje{margin-top:.75rem}
+.esquela .vestimenta p,.esquela .vestimenta b,.esquela .ciudad{font-size:clamp(1.18rem,2.9vw,1.33rem)}
+.esquela .nombre{margin-bottom:.1rem;padding:0 .1em}
+.esquela .vestimenta p,.esquela .vestimenta b,.esquela .ciudad{font-size:clamp(1.15rem,2.8vw,1.3rem)}
+.esquela .vestimenta svg{width:26px;height:26px}
 .detalle .chico{font-size:1.12rem}
 .cuenta small{font-size:.95rem}
 </style>
@@ -344,7 +351,7 @@ body::before{
       <div class="pie rev">
         <div class="vestimenta">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 5a2 2 0 1 1 2 2c-1 0-2 .6-2 1.6V9l9 7.5c.7.6.3 1.5-.6 1.5H3.6c-.9 0-1.3-.9-.6-1.5L12 9"/></svg>
-          <p><b>Vestimenta:</b> casual elegante</p>
+          <p><b>Vestimenta:</b> Casual elegante</p>
         </div>
         <p class="ciudad">Lima, 16 de setiembre de 2026</p>
       </div>
@@ -490,3 +497,4 @@ body::before{
 </script>
 </body>
 </html>
+
